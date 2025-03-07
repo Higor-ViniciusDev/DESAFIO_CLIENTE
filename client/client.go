@@ -1,4 +1,4 @@
-package client
+package main
 
 import (
 	"context"
@@ -14,6 +14,10 @@ import (
 
 type Cotacao struct {
 	Bid float64 `json:"bid,string"`
+}
+
+func main() {
+	RealizaRequest()
 }
 
 func RealizaRequest() {

@@ -1,4 +1,4 @@
-package server
+package main
 
 import (
 	"context"
@@ -12,6 +12,10 @@ import (
 
 	_ "github.com/mattn/go-sqlite3"
 )
+
+func main() {
+	IniciaServer()
+}
 
 func IniciaServer() {
 	http.HandleFunc("/cotacao", BuscarCotacao)
